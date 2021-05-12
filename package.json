@@ -1,0 +1,28 @@
+{
+  "name": "pvduc",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Pv Duc",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "lint": "eslint '**/*.js'"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "yarn lint --fix",
+      "git add"
+    ]
+  },
+  "devDependencies": {
+    "eslint": "^7.26.0",
+    "husky": "^6.0.0",
+    "prettier": "^2.3.0"
+  },
+  "dependencies": {}
+}
