@@ -6,7 +6,7 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "lint": "eslint '**/*.js'"
+    "lint": "eslint 'src/**/*.js'"
   },
   "husky": {
     "hooks": {
